@@ -145,14 +145,7 @@ blockquote strong {
 
 /* --- logo --- */
 
-.site-logo a.brand {
-	color: #111;
-	text-transform: uppercase;
-	font-size: 32px;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 900;
-	margin-top: 20px;
-}
+
 
 
 /* ------- Navigation ------------ */
@@ -189,7 +182,7 @@ blockquote strong {
 
 
 .navbar-custom ul.nav li a {
-	font-size: 12px;
+	font-size: 15px;
 	letter-spacing: 1px;
     color: #444;
 	text-transform: uppercase;
@@ -925,13 +918,15 @@ a.btn:focus{
   font-size: 14px;
   line-height: 40px;
 }
-
+.img-logo{
+	width: 80px;
+}
 /* Media queries */
 
 @media(min-width:767px) {
 
     .navbar {
-        padding: 20px 0;
+        padding: 10px 0;
         border-bottom: 0;
         letter-spacing: 1px;
         background: 0 0;
