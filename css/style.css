@@ -144,7 +144,6 @@ div p {
     font-weight: 400;
 }
 
-/* --- logo --- */
 
 
 
@@ -923,10 +922,48 @@ a.btn:focus{
 	width: 50px;
 }
 
+.whatsapp-button{
+	position: fixed;
+	right: 50px;
+	bottom: 30px!important;
+	width: 30px;
+	height: 30px;
+	font-size: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding:30px;
+	border: 1px solid #17e85e;
+	border-radius: 50%;
+	z-index: 150!	important;
+	color: white;
+	background-color: #17e85e ;
+	
+	
+}
+
 /* Media queries */
 
 @media(min-width:767px) {
-
+	.whatsapp-button{
+		position: fixed;
+		right: 65px;
+		bottom: 30px!important;
+		width: 60px;
+		height: 60px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding:40px;
+		border: 1px solid #17e85e;
+		border-radius: 50%;
+		z-index: 150!	important;
+		color: white;
+		background-color: #17e85e ;
+		font-size:14px;
+		
+		
+	}
     .navbar {
         padding: 10px 0;
         border-bottom: 0;
