@@ -137,8 +137,9 @@ blockquote strong {
 }
 
 
-
-
+div p {
+	font-size: 20px;
+}
 .light {
     font-weight: 400;
 }
@@ -524,7 +525,6 @@ section#intro {
 .header-text h2 span {
 	padding: 10px;
 	color: #fff;
-	text-transform: uppercase;
 }
 
 .header-text h3 span {
@@ -843,7 +843,7 @@ footer .social-widget ul.team-social li a {
 
 /* --- button --- */
 .btn {
-	border-radius: 2px;
+	border-radius: 5px;
 	position: relative;
 	display: inline-block;
 	outline: none;
@@ -918,9 +918,11 @@ a.btn:focus{
   font-size: 14px;
   line-height: 40px;
 }
+
 .img-logo{
-	width: 80px;
+	width: 50px;
 }
+
 /* Media queries */
 
 @media(min-width:767px) {
@@ -958,6 +960,20 @@ a.btn:focus{
         font-size: 25px;
     }
 
+	.img-logo{
+		width: 80px;
+	}
+	.row-custom{
+		display: flex;
+		align-items: center;
+	}
+	.nav li:hover a{
+		color: rgb(134, 134, 134)!important ;
+	}
+	
+	.img-logo:hover{
+		opacity: 65%;
+	}
 
 }
 @media (max-width:768px) {
