@@ -569,7 +569,7 @@ section#intro {
 	padding: 20px;
 	overflow-x: hidden;
 	overflow-y:hidden;
-	max-height: 250px;
+	height: 270px;
 	margin-bottom: 10px;
 }
 
@@ -1077,7 +1077,7 @@ a.btn:focus{
 	}
 	
 	.service-box {
-		margin-bottom: 50px;
+		margin-bottom: 15px;
 		
 	}
 	
