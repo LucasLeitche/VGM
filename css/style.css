@@ -160,7 +160,12 @@ div p {
 
 
 .navbar {
-    margin-bottom: 0;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   z-index: 120;
+   background-color: white!important;
 }
 
 .navbar-brand {
@@ -184,7 +189,7 @@ div p {
 .navbar-custom ul.nav li a {
 	font-size: 15px;
 	letter-spacing: 1px;
-    color: #444;
+    color: black;
 	text-transform: uppercase;
 	font-weight: 700;
 }
@@ -562,6 +567,15 @@ section#intro {
 	background: #fff;
 	border: 1px solid #f7f7f7;
 	padding: 20px;
+	overflow-x: hidden;
+	overflow-y:hidden;
+	max-height: 250px;
+	margin-bottom: 10px;
+}
+
+.service-box .service-desc h5{
+	font-size: 1.3em;
+	word-wrap: break-word;
 }
 
 .service-icon {
@@ -880,6 +894,9 @@ a.btn:focus{
   background-image: none;
 }
 
+.link-developer:hover{
+	color: white;
+}
 
 .btn-skin:hover,
 .btn-skin:focus,
@@ -924,7 +941,7 @@ a.btn:focus{
 
 .whatsapp-button{
 	position: fixed;
-	right: 50px;
+	right: 30px;
 	bottom: 30px!important;
 	width: 30px;
 	height: 30px;
@@ -936,10 +953,10 @@ a.btn:focus{
 	border: 1px solid #17e85e;
 	border-radius: 50%;
 	z-index: 150!	important;
-	color: white;
 	background-color: #17e85e ;
-	
-	
+}
+.whatsapp-button a {
+	color:white;
 }
 
 /* Media queries */
@@ -962,8 +979,9 @@ a.btn:focus{
 		background-color: #17e85e ;
 		font-size:14px;
 	}
-	.whatsapp-button:hover{
+	.whatsapp-button:hover a{
 		cursor: pointer;
+		color:rgb(201, 201, 201);
 	}
     .navbar {
         padding: 10px 0;
@@ -973,6 +991,8 @@ a.btn:focus{
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
+		position: inherit;
+		width: 100%;
     }
 
     .top-nav-collapse {
@@ -1021,9 +1041,16 @@ a.btn:focus{
 	.site-logo{
 		margin: 0 0 0 30px;
 		float:none;
+		display: flex;
+	}
+	.site-logo:first-child{
+		margin-top:10px;
+	}
+	.navbar-toggle{
+		margin-top: 0;
 	}
 	.navbar-custom ul.nav li a {
-		color: #eee;
+		color: black;
 	}
 	.navbar-custom ul.nav ul.dropdown-menu li {
 		border-bottom: 1px solid #aaa;
@@ -1049,6 +1076,7 @@ a.btn:focus{
 	
 	.service-box {
 		margin-bottom: 50px;
+		
 	}
 	
 	.team-wrap {
@@ -1061,6 +1089,21 @@ a.btn:focus{
 	
 	.xs-marginbot-20 {
 		margin-bottom: 20px;
+	}
+	.service-box {
+		background: #fff;
+		border: 1px solid #f7f7f7;
+		padding: 10px;
+		overflow-x: hidden;
+		font-size: 1em;
+		
+	}
+	.main-services{
+		display: flex;
+		flex-flow: row wrap;
+	} 
+	.service-box .service-desc h5{
+		font-size: 1.2em;
 	}
 
 }
